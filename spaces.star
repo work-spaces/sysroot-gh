@@ -32,3 +32,12 @@ windows_x86_64 = {
     "add_prefix": prefix,
     "link": link_type,
 }
+
+checkout.add_platform_archive(
+    rule = {"name": "gh"},
+    platforms = {
+        "macos_x86_64": macos_x86_64,
+        "macos_aarch64": macos_aarch64,
+        "windows_x86_64": windows_x86_64,
+    },
+)
