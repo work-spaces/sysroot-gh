@@ -1,7 +1,12 @@
 # sysroot-gh
 
-Add to `[deps]`:
-
-```toml
-rust = { git = "https://github.com/work-spaces/sysroot-sysroot", branch = "v2", checkout = "BranchHead" }
+```startlark
+checkout.add_repo(
+    rule = { "name": "tools/sysroot-gh" },
+    repo = {
+        "url": "https://github.com/work-spaces/sysroot-gh",
+        "rev": "v2",
+        "checkout": "Revision"
+    }
+)
 ```
